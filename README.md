@@ -1,6 +1,17 @@
-# hynes-bruell.me
+# Profile Website - Justin
 
-## Project setup
+Website is using Vue 3
+
+Ideas to add:
+* Three.js
+* Snake Game
+* Conway's game of Life
+* Timeline of work
+
+
+## To Develop:
+
+### Project setup
 ```
 yarn install
 ```
@@ -19,6 +30,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
