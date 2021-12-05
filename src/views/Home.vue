@@ -1,18 +1,19 @@
 <template>
   <div class="home">
-    <h1>3D Rendering here</h1>
-    <SnakeApp/>
+    <Welcome/>
+    <ProjectSearch/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import SnakeApp from '@/components/Snake.vue'
+import Welcome from '@/components/Welcome.vue'
+import ProjectSearch from '@/components/ProjectSearch.vue'
 
 export default {
   name: 'Home',
   components: {
-    SnakeApp,
-  } 
+    Welcome,
+    ProjectSearch,
+  }
 }
 </script>
