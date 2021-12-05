@@ -1,6 +1,6 @@
 # Profile Website - Justin
 
-Website is using Vue 3
+Personal website using Vue 3
 
 Ideas to add:
 * Three.js
@@ -8,25 +8,27 @@ Ideas to add:
 * Conway's game of Life
 * Timeline of work
 
+## To-Do
+* Resize image of BioPhoto to make smaller for faster rendering
 
 ## To Develop:
 
 ### Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+npm build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+npm lint
 ```

@@ -7,7 +7,7 @@
 
 <script>
 import Welcome from '@/components/Welcome.vue'
-import ProjectSearch from '@/components/ProjectSearch.vue'
+import ProjectSearch from '@/components/projects/ProjectSearch.vue'
 
 export default {
   name: 'Home',
