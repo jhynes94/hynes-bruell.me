@@ -10,6 +10,7 @@ Ideas to add:
 
 ## To-Do
 * Resize image of BioPhoto to make smaller for faster rendering
+* Consider making the Experience Item more independent, not gathering data in Home View
 
 ## To Develop:
 

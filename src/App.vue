@@ -16,8 +16,10 @@ export default {
 </script>
 
 <style>
+/* https://coolors.co/87a5c0 */
 body{
   margin: 0px;
+  background-color: #87A5C0;
 }
 
 #app {
@@ -25,5 +27,10 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+
+
+.button {
+  background-color: #C0A187;
 }
 </style>

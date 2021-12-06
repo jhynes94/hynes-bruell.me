@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="Welcome-Jumbo">
-      <h1>Hey, I'm Justin</h1>
-      <img style="width: 30%" alt="Vue logo" src="../assets/BioPhoto.jpg" />
+      <h1>Justin Hynes-Bruell</h1>
       <h2>Engineer and Manager</h2>
-      <h3>Link to GitHub and LinkedIn</h3>
+      <img style="width: 20%" alt="Vue logo" src="../assets/BioPhoto.jpg" />
+      <a href="https://github.com/jhynes94"> <i class="fa fa-github fa-fw"></i> <span>Github</span></a>
+      <a href="https://www.linkedin.com/in/justin-hynes-bruell-3ba07360/"> <i class="fa fa-github fa-fw"></i> <span>Linkedin</span></a>
       <h2>Ideas for Visualization</h2>
-      <ul>
-        <li>ThreeJS Visualization</li>
-        <li>Game of some kind</li>
-      </ul>
+      <p>ThreeJS Visualization</p>
+      <p>Game of some kind</p>
+      <div class="button">projects</div>
       <hr />
     </div>
   </div>
@@ -23,4 +23,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+div {
+  text-align: center;
+}
+
+
 </style>
