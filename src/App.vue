@@ -19,7 +19,7 @@ export default {
 /* https://coolors.co/87a5c0 */
 body{
   margin: 0px;
-  background-color: #87A5C0;
+  background-color: white;
 }
 
 #app {
@@ -27,6 +27,10 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+
+hr{
+  border: solid 1px;
 }
 
 

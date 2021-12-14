@@ -10,7 +10,7 @@
         margin-top: 10px;
       "
     >
-      3d rendering
+      Justin Hynes-Bruell
     </h1>
   </div>
 </template>
