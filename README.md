@@ -1,16 +1,18 @@
 # Profile Website - Justin
 
-Personal website using Vue 3
+Personal website for projects and experience.
 
-Ideas to add:
-* Three.js
+Project is broken into a Vite App with Vanilla JS, HTML, and CSS. There is a seperate directory for a Vue app. This needs to be completely updated or removed.
+
+To-do:
+* Three.js interactive
 * Snake Game
 * Conway's game of Life
-* Timeline of work
-
-## To-Do
-* Resize image of BioPhoto to make smaller for faster rendering
-* Consider making the Experience Item more independent, not gathering data in Home View
+* Fix HTTPS Certificate for SSL
+* Augmented Reality for Security
+* Concrete Weights (Gantry System)
+* Water Level Sensor
+* Update NFC Wearable For book
 
 ## To Develop:
 
