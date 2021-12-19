@@ -35,9 +35,21 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/landingPage/intricate_circuitry_005.webp) no-repeat center center;
+    /*background: url(../img/landingPage/intricate_circuitry_005.webp) no-repeat center center;*/
     background-size: cover;
 }
+
+#iframe { 
+    position: absolute; 
+    float: left; 
+    clear: both; 
+    width: 100%; 
+    height: 86%; 
+    z-index: 0; 
+    left: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
 
 .intro-message {
     position: relative;
