@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap Core CSS -->
+  <link href="CSS/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="CSS/landing-page.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="CSS/timeline.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+  <title>JHB</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand topnav" href="#"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#Design">Design</a>
+          </li>
+          <li>
+            <a href="#Results">Results</a>
+          </li>
+          <li>
+            <a href="#Awards">Awards</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+  <!-- Header -->
+  <a name="Intro"></a>
+  <div class="intro-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <h1>Covert NFC Wearable</h1>
+            <h3>Contract Project</h3>
+            <hr class="intro-divider">
+            <ul class="list-inline intro-social-buttons">
+              <li>
+                <a href="https://github.com/jhynes94/NFC-Wearable" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.intro-header -->
+
+
+
+  <a name="Introduction"></a>
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <h2 class="section-heading">Define customer needs</h2>
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <p class="lead">
+            A Harvard professor wanted to record patients (users) taking notes on their cancer treatments. 
+            This was to ensure they were following up on their treatment. 
+          </p>
+          <p class="lead">
+            The objective of the device was to covertly log the opening and closing of patient notebook. This 
+             data had to include timestamps, be quickly cleared and read from the device, and most importantly, below 
+            $20 a notebook.
+          </p>
+          <p class="lead">
+            The project was conducted was in 6 stages.
+          </p>
+          <ol>
+            <li>Determine the specs and scope.</li>
+            <li>Calculate the cost and bid for a price.</li>
+            <li>Agree on the contract cost and timeline.</li>
+            <li>Develop prototype.</li>
+            <li>Check in with customer and solicite feedback</li>
+            <li>Complete project with delivered units.</li>
+          </ol>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+          <img class="img-responsive" src="./documents/Notebook.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <a name="Design"></a>
+    <div class="content-section-b">
+      <h1 style="text-align: center" class="section-heading">Electrical Design</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <img style="display: block;margin: 0 auto;" class="img-responsive" src="./documents/Architecture.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Microcontroller</h2>
+            <p class="lead">The first design decision was to choose which microcontroller to use. We wanted 
+              something that was low power (50uA), low height (0.55mm), easy to program (STM32IDE), and affordable ($1.38). 
+            </p>
+            <p class="lead">Thus, we settled on the STM32L011F4. One will also notice ports were connected with test points 
+              to allow for future expandability.
+            </p>
+            <p class="lead"></p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 130px" class="img-responsive" src="./documents/uC.PNG" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Programming</h2>
+            <p class="lead">
+              The debugger chosen was the JLINK basic as it was used in previous projects. (899-1004-ND)
+            </p>
+            <p class="lead"> 
+              We also wanted a low cost programming port, so the use of the Tag-Connect programmer was a must. (TC2050-ARM2010, TC2050-IDC)
+            </p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 130px" class="img-responsive" src="./documents/JLINK.PNG" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Magnetic Switch</h2>
+            <p class="lead">Starting out a reed switch like the MDSM-4R-12-18 seems like a good choice. It was low profile and relatively low cost.</p>
+            <p class="lead">This was until we found the A3213ELHLT-T Hall effect sensor. It's cost is far less, it's more reliable, lower profile, smaller footprint.</p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 130px" class="img-responsive" src="./documents/Switch.PNG" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Battery</h2>
+            <p class="lead">Chooseing a battery was critical to the project. Thus the following table was made to search for the optimal part.
+              The one chosen was the CR-2016/F2N
+            </p>
+            <h1>Fix the table</h1>
+            <table class="lead" style="width:100%; border: 1px solid black;">
+              <tr>
+                <th>Battery</th>
+                <th>Height (mm)</th>
+                <th>Cost ($)</th>
+                <th>Power (mAh)</th>
+                <th>Height (mm)</th>
+              </tr>
+              <tr>
+                <td>CR2030</td>
+                <td>ML614-TZ21</td>
+                <td>ML-614S/FN</td>
+                <td>MS412FE-FL26E</td>
+                <td>CR-2016/F2N</td>
+              </tr>
+              <tr>
+                <td>3.56</td>
+                <td>1.4</td>
+                <td>1.5</td>
+                <td>1.2</td>
+                <td>1.6</td>
+              </tr>
+              <tr>
+                <td>0.85</td>
+                <td>2.12</td>
+                <td>1.96</td>
+                <td>1.82</td>
+                <td>1.12</td>
+              </tr>
+              <tr>
+                <td>225</td>
+                <td>3.4</td>
+                <td>3.4</td>
+                <td>1</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>6.80</td>
+                <td>6.8</td>
+                <td>4.8</td>
+                <td>20</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 130px" class="img-responsive" src="./documents/Battery.PNG" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">NFC</h2>
+            <p class="lead">Used STEVAL-SMARTAG1 as a reference design</p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 130px" class="img-responsive" src="./documents/NFC.PNG" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Layout</h2>
+            <p class="lead">Mention Antenna Design https://my.st.com/analogsimulator/html_app/antenna/#/</p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 130px" class="img-responsive" src="./documents/Layout.PNG" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Rendering</h2>
+            <p class="lead">Submitted order and BOM to PCBWAY... on Costs</p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 130px" class="img-responsive" src="./documents/NFC_Rendering.PNG" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Implementation</h2>
+            <p class="lead">Recieved DigiKey Parts and PCBs, built up test</p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 130px" class="img-responsive" src="./documents/NFC_Real.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Software</h2>
+            <p class="lead">The Unity game engine enabled the rendering of a 3D enviroment to navigate with either a controller or a full
+              VR system (HTC VIVE). Signals were routed by Uniduino to the Arduino RF dongle via USB</p>
+            <p class="lead">As a player, the goal was to navigate the maze with vision. Then naviagte a randomly given maze blindfolded (visionless)
+              with the use of the VIEW system. </p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 70px" class="img-responsive" src="./documents/Maze-Picture.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Enclosure</h2>
+            <p class="lead">OnShape was used to design the enclosure. To view the enclosure, follow this
+              <a href="https://cad.onshape.com/documents/5b97372246943e6710cd78f6/w/a276bab8d066d2b69cc8fe05/e/ecc9f3fcdd4f0e765df44b8f">link.</a>
+            </p>
+            <p class="lead">Design considerations were as follows:
+              <ul class="lead">
+                <li>Snap fit PCB</li>
+                <li>Space for LiPo battery + Connector</li>
+                <li>External Power Port</li>
+                <li>Programming port</li>
+                <li>Snap fit enclosure top</li>
+                <li>Belt loop on back of enclosure</li>
+              </ul>
+            </p>
+            <p class="lead">This enclosure was manufactured by MakeXYZ with a .step file</p>
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <img style="padding-top: 70px" class="img-responsive" src="./documents/Enclosure.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="list-inline">
+            <li>
+              <a href="../">Home</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="../">About</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="../">Contact</a>
+            </li>
+          </ul>
+          <p class="copyright text-muted small">Copyright &copy; Justin Hynes-Bruell 2017. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
