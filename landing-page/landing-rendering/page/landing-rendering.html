@@ -26,7 +26,7 @@
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth-10, window.innerHeight-10 ); //Minux 10px used to remove scroll from iframe
 				document.body.appendChild( renderer.domElement );
 
 				// camera
@@ -67,7 +67,8 @@
 
 				let dodecahedronGeometry = new THREE.DodecahedronGeometry( 10 );
 
-				// if normal and uv attributes are not removed, mergeVertices() can't consolidate indentical vertices with different normal/uv data
+				// if normal and uv attributes are not removed, mergeVertices() 
+				//    can't consolidate indentical vertices with different normal/uv data
 
 				dodecahedronGeometry.deleteAttribute( 'normal' );
 				dodecahedronGeometry.deleteAttribute( 'uv' );
@@ -130,7 +131,7 @@
 				camera.aspect = window.innerWidth / window.innerHeight;
 				camera.updateProjectionMatrix();
 
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth-10, window.innerHeight-10);
 
 			}
 
