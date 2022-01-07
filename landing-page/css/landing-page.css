@@ -53,13 +53,13 @@ h6 {
 
 .intro-message {
     position: relative;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 15%;
+    margin-bottom: 19%;
     margin-left: 10%;
     margin-right: 10%;
     padding: 5%;
     background-color: #3a3136;
-    opacity: .95;
+    opacity: .6;
 }
 
 .intro-message > h1 {
