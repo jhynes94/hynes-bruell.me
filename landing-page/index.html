@@ -64,7 +64,7 @@
     <!-- Header -->
     <a name="Intro"></a>
     <iframe id="iframe" src="./landing-rendering/page/landing-rendering.html" style="border:none;" frameborder="0" title="ThreeJS Rendering"></iframe>
-    <div class="intro-header">
+    <div id="renderSize" class="intro-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -89,7 +89,14 @@
 
         </div>
         <!-- /.container -->
-
+        <script>
+            //Set Height of iframe to the intro header
+            function setRenderRight(){
+                document.getElementById("iframe").style.height = document.getElementById("renderSize").clientHeight + "px"
+            }
+            setRenderRight()
+            object.addEventListener("resize", setRenderRight);
+        </script>
     </div>
     <!-- /.intro-header -->
 
